@@ -44,7 +44,7 @@ export class Slide {
       this.dist.startX = event.changedTouches[0].clientX;
       movetype = "touchmove";
     }
-
+    this.dist.movement = 0;
     this.wrapper.addEventListener(movetype, this.onMove);
     this.transition(false);
   }
